@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Paiger 2016
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Paige Fukuhara
+Author URI: http://paigefukuhara.com/
+Description: What I always imagined my own site to look like. Nothing super exciting. Clean, white, simple. 
+Version: 1.0
+*/
+
+/*
+css for wordpress template
+last updated 6/6/16
+*/
+html {
+    background-color: #e6e9e9;
+    background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -o-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -moz-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -ms-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1024px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #545454;
+    background-color: #ffffff;
+
+
+}
+article {
+    margin: auto;
+    padding: 0;
+    background-color: #eaeaea;
+    padding: 0;
+    border: .5px solid;
+    border-collapse: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 100;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 {
+    text-transform: none;
+    font-size: 2.5em;
+    padding:2em 0;
+    position: relative;
+   
+    
+}
+
+h2 {
+font-size: 1.2em;
+}
+h3 {
+font-size: .8em;
+position: relative;
+top:-10px;
+}
+h4 {
+font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    right:20px;
+}
+a {
+    color: #00ad9e; 
+    text-decoration: none;
+}
+a:hover {
+    color:#dc00ff;
+
+}
+
+b, strong {
+    font-weight: 400;
+}
+
+
+img {
+
+    display: block;
+    margin: auto;
+    max-width: 95%;
+
+}
+
+section {
+width: 48%;
+
+    margin:20px 0;
+}
+#template {
+float:left;
+    
+}
+#template h4 {
+text-align: right;
+}
+
+#protosite {
+float:right;
+}
+#protosite h4 {
+text-align: left;
+}
+
+ul{
+
+text-decoration: none;
+padding-bottom: 20px;
+    padding:0;
+    width:80%;
+}
+#protosite ul {
+position: relative;
+right:-10px;
+
+}
+
+#template ul {
+text-align: right;
+    position: relative;
+   right:-45px;
+
+}
+li {
+list-style-type: none;
+    
+}
+
+
+footer {
+clear: both;
+font-size: .5em;
+text-align: center;
+text-transform: uppercase;
+padding:4em 0 2em;
+}
+
+/* styling below is for main.html or index.php */
+
+
+article {
+margin:auto;
+padding:0;
+
+}
+article.intro h2:first-of-type {
+text-align: left;
+margin-top: 2em;
+margin-bottom: 1em;
+padding-bottom: 2em;
+
+    width:80%;
+line-height: normal;
+}
+article h3 {
+padding:0;
+    margin:0;
+}
+article figure img{
+max-width:300px;
+padding:0;
+padding:20px;
+margin:0;
+margin:auto;
+}
+article figcaption p {
+font-size:.75em;
+font-style:italic;
+font-family: 'Sue Ellen Francisco';
+}
+#lasagna  {
+    width:62%;
+    float:left;
+margin:0;
+padding:0;
+padding-top:0;
+    }     
+        
+#lasagna h2 {
+text-align: left;
+padding:0;
+padding-top: 20px;
+
+}
+#broccoli  {
+width:30%;
+float:right;
+background-color:hsl(0, 0%, 87%);
+padding-top:0;
+padding: 0 10px 0 20px;
+border-left:black solid 1px;
+position: relative;
+    top:50px;
+
+}   
+#broccoli h3:first-of-type {
+
+padding-top: 20px;
+}
+#broccoli h4 {
+font-size:1em;
+line-height: normal;
+
+    text-transform: uppercase;
+}
