@@ -1,15 +1,16 @@
 <?php
 /**<!--html template for Wordpress Main Page | WEB 170 | SPRING 2016-->**/
+?>
 <!DOCTYPE html>
 
 <html>
 
     <head>
         <meta charset="utf-8">
-
-        <title>Paige Fukuhara | Creative Services, Art &amp; UX &amp; UI Consultant | Seattle WA | Photographer, Illustrator, Visual Strategist</title>
+	
+        <title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?> | Seattle WA Photographer, Illustrator, Visual Strategist</title>
      
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')/css/style.css; ?>">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>" type="text/css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/responsiveslides.js"></script>  
 <script src="<?php bloginfo('template_directory'); ?>/js/responsiveslides.min.js"></script>      
@@ -17,8 +18,9 @@
     
 
         </style>      
+    <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class();?>>
         
   <header><a href="home.html">   
 <div id="logoHeader"><!--BEGIN logoHeaderdiv-->
