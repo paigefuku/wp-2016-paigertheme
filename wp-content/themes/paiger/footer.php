@@ -1,3 +1,4 @@
+<?php ?>
  <footer>
         <div id="copyright">
             <p>Site design, contents, all imagery &copy; Paige Fukuhara 2016</p>
@@ -8,6 +9,7 @@
     $(".rslides").responsiveSlides();
   });
 </script>
+<?php wp_footer(); ?>
     </body>
 </html>
 
