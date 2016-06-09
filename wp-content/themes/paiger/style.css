@@ -9,13 +9,7 @@ css for template | WEB 170 | SPRING 2016
  @import url(https://fonts.googleapis.com/css?family=Muli);           
 
 html {
-background-color: #e6e9e9;
-background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-background-image: -o-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-background-image: -moz-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-background-image: -ms-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
--webkit-font-smoothing: antialiased;
+
 }
 
 body {
@@ -31,8 +25,6 @@ body {
     text-transform: uppercase;
 }
 header {
-
-
 width:90%;
 max-width:1280px;
 margin:auto;
@@ -86,26 +78,24 @@ text-decoration: none;
 }
 a:hover {
 color:#dc00ff;
-font-weight: 800;
+
 }
 
-
-
+#navmenu {
+position:relative;
+top:-95px;
+float:right;
+z-index:1000;
+}
 #navmenu ul {
 margin: 0; padding: 0; 
 list-style-type: none; 
 list-style-image: none;
 background-color: #ffffff;
-position:relative;
-top:-95px;
-float:right;
-
-
-
 }
         
 #navmenu li {
-display: inline;
+display: inline-block;
 padding:0 1em;
 }  
         
@@ -119,7 +109,7 @@ color:#00ad9e;
 }
 #navmenu li a:hover {
  color:#dc00ff;
-font-weight: 800;
+font-weight: 500;
 
 }
 #navmenu li ul {
@@ -128,34 +118,30 @@ position: absolute;
 display: none;
 padding: 0; margin: 0;
 padding-left: 5px;
-background-color: pink;
+background-color: #fff;
 opacity: .75;
-
 }
         
 #navmenu li:hover ul {
 display: inline-block;
 padding:0;
 
+clear:both;
+
 }
 #navmenu li ul li {
 display: block;
 padding: 0; margin: 0;
-
 font-size:.75em;
 border-bottom: solid 1px black;
 
 }
 #navmenu li ul li:hover {
 opacity: 1.0;
-
-
 }
     
 #navmenu li ul li:last-child {
-
 border-bottom:none;
-
 }
 
         
@@ -163,13 +149,14 @@ border-bottom:none;
 width:60%;
 align-content: center;
 padding-bottom: 20px;
-float:right;
-    
+float:right;  
 }
+
 #slideshow {
 margin:auto;
 width: 25%;
 }
+
 .rslides {
 position: relative;
 list-style: none;
@@ -202,22 +189,37 @@ float: left;
 width: 100%;
 border: 0;
 }
-        
+#content {
+width:80%;
+margin:auto;
+text-transform:none;
+margin:auto;
+padding:0;
+clear:both;
+position:relative;
+top:-100px;
+font-family:'Muli', sans-serif;
+
+	}
+#content h2 {
+padding:0;
+margin:0;	
+	}
+/*       
 .intro {
 width:80%;
 font-family: 'Noto Sans', sans-serif;
 font-size: .75em;
 text-transform: none;
 margin:auto;
-
 position: relative;
 top:-130px;
 }
+
 .intro h2 {
 text-align: center;
     padding:2em 0;
 font-size: 2em;
-
 }
         
 .intro h3 {
@@ -227,24 +229,24 @@ text-transform: uppercase;
 .intro p {
 line-height: normal;
 }
-        
+      
 #meatPotatoes {
-
 width:90%;
 margin:auto;
-
-
 }
+
 #steak {
 float:left;
 width:48%;
 padding:2em 0;
 }
+
 #asparagus {
 float:right;
 width:48%;
 padding:2em 0;
-}     
+}   
+  
 blockquote {
 font-size:1.2em;
 font-weight: 400;
@@ -252,7 +254,102 @@ font-family: 'Noto Sans', arial;
 line-height: 100%;
     font-style: italic;
 }
+ */       
+article {
+margin:auto;
+padding:0;
+background-color:#fff;
+width:90%;
+
+}
+article h2 {
+text-align: left;
+font-size:1.33em;
+width:80%;
+line-height: normal;
+position:relative;
+top:-50px;
+padding:20px 0 0 25px;
+
+}
+
+article figure img{
+max-width:300px;
+padding:0;
+padding:20px;
+margin:0;
+margin:auto;
+}
+
+article figcaption p {
+font-size:.80em;
+font-style:italic;
+font-family: 'Sue Ellen Francisco';
+}
+blockquote {
+font-family: 'Sue Ellen Francisco';
+font-size:1.2em;
+line-height:175%;
+margin:auto;
+width:75%;
+padding:1em 4em 1em 2em;
+	}
+	
+#lasagna  {
+width:75%;
+float:left;
+margin:0;
+position:relative;
+top:-50px;
+
+    }     
         
+#lasagna h2 {
+text-align: left;
+text-transform:uppercase;
+
+}
+#lasagna h3 {
+font-size:1.2em;	
+	}
+#lasagna p {
+width:90%;
+	}
+#broccoli  {
+width:20%;
+float:right;
+background-color:hsl(0, 0%, 87%);
+padding-top:0;
+padding: 0 10px 0 20px;
+position: relative;
+top:50px;
+
+}   
+#broccoli h3:first-of-type {
+padding-top: 20px;
+margin:auto;
+}
+
+#broccoli h4 {
+font-size:1em;
+line-height: normal;
+text-transform: uppercase;
+
+}
+#broccoli ul {
+padding:0;
+padding-left:1.25em;
+margin-top:0;
+	}
+#broccoli p, #broccoli li {
+font-size:.75em;
+margin:0 5px;
+line-height:150%;
+
+	}
+#broccoli p {
+	padding-bottom:10px;
+	}
 footer {
 font-size:10px;
 text-align: center;

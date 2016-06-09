@@ -16,7 +16,7 @@
 </head>
 <body <?php body_class();?>>
 
-<header><a href="home.html">   
+<header><a href="http://paigefukuhara.com" alt="Paige Fukuhara | Home">   
 <div id="header"><!--BEGIN header div, WP core-->
 <div id="logoHeader"><!--BEGIN logoHeaderdiv-->
        <img src="<?php bloginfo('template_directory'); ?>/images/papers.png" id="flyingpapers" alt="banner-top"> 
@@ -51,6 +51,7 @@
          </li> 
         <li class="nav-menu"><a href="#">Portfolio</a></li>
         <li class="nav-menu"><a href="#">Contact</a></li>
+        <li class="nav-menu"><a href="#">Blog</a></li>
         </ul>    
     </div><!--END navigation div, WP core-->
    </div> <!--END navmenu, WP corediv-->
